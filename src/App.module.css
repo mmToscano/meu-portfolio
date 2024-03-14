@@ -1,0 +1,11 @@
+.principal {
+    width: 100%;
+    border: solid yellow 1px;
+    background-color: #156082;
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

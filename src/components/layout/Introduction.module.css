@@ -1,0 +1,73 @@
+.introduction {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #156082;
+    margin-top: 50px;
+}
+
+.introduction .infoArea {
+    margin-left: 90px;
+    margin-top: 80px;
+}
+
+.introduction .infoArea > h1:nth-of-type(1) { /*seleciona o elemento na ordem em que está inserido */
+    color: white;
+}
+
+.introduction .infoArea > h1:nth-of-type(2) { 
+    color: #8ED973;
+}
+
+.introduction .infoArea h3 {
+    color: #8ED973;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.introduction img {
+    height: 348px;
+    width: 348px;
+    border-radius: 400px;
+    margin-right: 70px;
+}
+
+.introduction button {
+    height: 40px;
+    
+}
+
+.introduction .buttonArea {
+    display: flex;
+}
+
+.introduction .buttonArea button { 
+    margin-right: 15px;
+    width: 130px;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+    border: solid white 2px;
+}
+
+.introduction .buttonArea div { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   background-color: white;
+   width: 200px;
+   border-radius: 100px;
+   border: solid black 2px;
+}
+
+.introduction .buttonArea div h2{ 
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.introduction .buttonArea div img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+}
