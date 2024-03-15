@@ -1,0 +1,3 @@
+const myText = ['Sou atualmente estudante de Ciências da computação na UNITRI. Estou no 4º período. Nunca tinha visto nada de programação antes da faculdade e, por sorte, adorei a área logo nas primeiras aulas.','Minha principal fonte de conhecimento vem das aulas, dos cursos na internet e dos projetos que faço.  Não consigo ainda dizer se tenho mais aptidão pelo front-end ou pelo back-end, mas já fiz programas em ambos, como você poderá ver mais abaixo.']
+
+export default myText;

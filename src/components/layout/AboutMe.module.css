@@ -1,0 +1,31 @@
+.aboutMe {
+    width: 80%;
+    background-color: #104862;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.textArea {
+    color: white;
+}
+
+.textArea h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.textArea h2{
+    font-weight: 100;
+}
+
+.textArea h2 b {
+    color: #8ED973;
+}
+
+.buttonArea {
+    display: flex;
+    justify-content: space-around;
+}
