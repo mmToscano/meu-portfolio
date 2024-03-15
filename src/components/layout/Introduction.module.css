@@ -71,3 +71,7 @@
     height: 30px;
     margin-right: 0px;
 }
+
+.buttonArea button:hover, .buttonArea div:hover {
+    cursor: pointer;
+}

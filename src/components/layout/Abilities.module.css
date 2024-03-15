@@ -1,0 +1,63 @@
+.abilitiesSection {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.abilitiesSection h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 45px;
+}
+
+.infoArea {
+    display: flex;
+}
+
+.infoArea > h2 {
+    width: 50%;
+    text-align: left;
+    color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 10px;
+    font-weight: 100;
+}
+
+.languagesArea {
+    background-color: #104862;
+    width: 50%;
+}
+
+.selectionArea {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid white 1px;
+    margin: 0 auto;
+    color: white;
+    height: 80px;
+}
+
+.selectionArea h2:hover {
+    cursor: pointer;
+}
+
+.iconsArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.iconsArea img{
+    width: 20%;
+    margin-bottom: 45px;
+}
+
+.iconsArea img:hover{
+    cursor: pointer;
+}
+
+.chosen {
+    border-bottom: solid white 3px;
+}
