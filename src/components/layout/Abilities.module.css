@@ -49,15 +49,6 @@
     margin-top: 40px;
 }
 
-.iconsArea img{
-    width: 20%;
-    margin-bottom: 45px;
-}
-
-.iconsArea img:hover{
-    cursor: pointer;
-}
-
 .chosen {
     border-bottom: solid white 3px;
 }
