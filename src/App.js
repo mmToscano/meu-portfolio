@@ -5,6 +5,7 @@ import Navbar from './components/layout/Navbar';
 import Introduction from './components/layout/Introduction';
 import AboutMe from './components/layout/AboutMe';
 import Abilities from './components/layout/Abilities';
+import Projects from './components/layout/Projects';
 
 //navbar
 //introdução
@@ -19,6 +20,7 @@ function App() {
       <Introduction/>
       <AboutMe/>
       <Abilities/>
+      <Projects/>
     </div>
     
     
