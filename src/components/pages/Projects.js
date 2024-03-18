@@ -13,7 +13,7 @@ function Projects() {
     const [showFront, setShowFront] = useState(true);
     const [showBack, setShowBack] = useState(false);
     const [chosenElement, setChosenElement] = useState(null);
-    const [chosenImgs, setChosenImgs] = useState(null);
+    const [chosenProject, setChosenProject] = useState(null);
 
     useEffect(() => {
         setChosenElement(document.getElementById("chosen")); //coloca o front como selected
@@ -35,6 +35,7 @@ function Projects() {
    }
 
    const mostrarDemo = (id) => {
+    console.log("clicou")
     var selectedProject;
     for (let index = 0; index < projects.length; index++) {
         if(id == index){
@@ -42,7 +43,7 @@ function Projects() {
             break;
         }
     }
-    setChosenImgs(selectedProject.imgs);
+    setChosenProject(selectedProject);
    }
 
     return (
@@ -66,13 +67,12 @@ function Projects() {
                     </div>
                 </div>
                 <div className={styles.demonstrationArea}>
-                    {chosenImgs ? (
-                        <Demonstration imgs={chosenImgs} />
-                    ) : (
-                        <Demonstration imgs={defaultImg}/>
+                    {chosenProject ? (
+                            <Demonstration name={chosenProject.name} description={chosenProject.description} imgs={chosenProject.imgs} />
+                        ) : (
+                            <Demonstration imgs={defaultImg}/>
                     )}
-                    
-                    
+
                 </div>
             </div>
         </div>

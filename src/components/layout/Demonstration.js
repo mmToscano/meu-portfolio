@@ -3,40 +3,62 @@ import styles from "./Demonstration.module.css";
 import leftArrow from "../../img/leftArrow.png"
 import rightArrow from "../../img/rightArrow.png"
 
-function Demonstration({imgs}) {
+import React, {useEffect, useState} from 'react'
 
-    var initial = 0;
-    var currentPosition = initial;
+function Demonstration({name, description, imgs}) {
+
+    const [positionValue, setPositionValue] = useState(0);
 
 
     const toggleImgs = (event) => {
-        var selectedDemoImage = document.getElementById("selectedDemoImage");
+
         var leftButton = document.getElementById("left");
         var rightButton = document.getElementById("right");
-
-        if(event.target == leftButton){
-            currentPosition--;
-            selectedDemoImage.src = imgs[currentPosition];
-        }else{
-            currentPosition++;
-            selectedDemoImage.src = imgs[currentPosition];
+    
+        if (event.target === leftButton) {
+            if (!(positionValue === 0)) {
+                setPositionValue(prevPosition => prevPosition - 1);
+            }
         }
+        
+        if (event.target === rightButton) {
+            if (!(positionValue === imgs.length - 1)) {
+                setPositionValue(prevPosition => prevPosition + 1);
+            }
+        }
+    };
 
-        console.log(currentPosition)
+    //[] executa no f5
+    // vazio executa a cada renderização de qualquer coisa
+    
+    // Update the image source after the state has been updated
 
+    useEffect(() => {
+        var selectedDemoImage = document.getElementById("selectedDemoImage");
+        selectedDemoImage.src = imgs[positionValue];
+    }, [positionValue]);
 
-    }
+    useEffect(() => {
+        setPositionValue(0);
+    },[imgs])
 
     return (
         <div className={styles.principal}>
+            <h2>{name}</h2>
             <div className={styles.toggleArea}>
-                <button onClick={toggleImgs} id="left"><img src={leftArrow}/></button>
-                <img src={imgs[0]} id="selectedDemoImage"/>
-                <button onClick={toggleImgs} id="right"><img src={rightArrow}/></button>
+                <button ><img src={leftArrow} onClick={toggleImgs}  id="left"/></button>
+
+                {imgs.length > 0 ? (
+                    <img src={imgs[0]} id="selectedDemoImage"/>                    
+                    ) : (
+                        <img src={imgs} id="selectedDemoImage"/>
+                )}
+                
+                <button ><img src={rightArrow} onClick={toggleImgs} id="right"/></button>
 
             </div>
-            <h2>
-               *descrição do projeto e minha experiência com ele 
+            <h2 className={styles.description}>
+               {description}
             </h2>
         </div>
         
