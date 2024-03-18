@@ -4,13 +4,13 @@
 
 .principal h1 {
     margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
     color: white;
 }
 
 .selectionArea {
     width: 50%;
-    border: solid black 1px;
 }
 
 .infoArea {
@@ -18,10 +18,15 @@
 }
 
 .buttonArea {
+    height: 80px;
     display: flex;
-    border: solid black 1px;
+    align-items: center;
     justify-content: space-evenly;
     color: white;
+}
+
+.buttonArea h2 {
+    cursor: pointer;
 }
 
 .chosen {
@@ -31,12 +36,12 @@
 .imgArea {
     width: 100%;
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    border: solid pink 1px;
+    margin-top: 20px;
 }
 
 .demonstrationArea {
     width: 50%;
     background-color: #104862;
-    border: solid black 1px;
 }
