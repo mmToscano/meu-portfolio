@@ -1,15 +1,13 @@
-
-import Container from './components/layout/Container';
 import styles from './App.module.css';
-import Navbar from './components/layout/Navbar';
-import Introduction from './components/layout/Introduction';
-import AboutMe from './components/layout/AboutMe';
-import Abilities from './components/layout/Abilities';
-import Projects from './components/layout/Projects';
+import Navbar from './components/pages//Navbar';
+import Introduction from './components/pages/Introduction';
+import AboutMe from './components/pages/AboutMe';
+import Abilities from './components/pages/Abilities';
+import Projects from './components/pages/Projects';
 
 //navbar
 //introdução
-//SObre mim
+//Sobre mim
 //Habilidades
 //Projetos
 
@@ -22,8 +20,6 @@ function App() {
       <Abilities/>
       <Projects/>
     </div>
-    
-    
   );
 }
 

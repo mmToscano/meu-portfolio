@@ -1,0 +1,26 @@
+.principal {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.toggleArea {
+    display: flex;
+}
+
+.toggleArea button {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+}
+
+.toggleArea button > img{
+    width: 100%;
+}
+
+.toggleArea button > img:hover{
+    cursor: pointer;
+}
+
+.toggleArea > img {
+    width: 80%;
+}

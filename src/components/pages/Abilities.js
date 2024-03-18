@@ -3,7 +3,7 @@ import React, {useEffect, useState} from 'react';
 import styles from "./Abilities.module.css"
 
 import abilitiesList from "../../fake_database/AbilitiesList"
-import ImgContainer from './ImgContainer';
+import ImgContainer from '../layout/ImgContainer';
 
 function Abilities() {
 

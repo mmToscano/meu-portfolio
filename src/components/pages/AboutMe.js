@@ -1,6 +1,6 @@
 import styles from "./AboutMe.module.css";
 import text from "../../texts/AboutMeText.js";
-import ButtonDefault from "./ButtonDefault.js";
+import ButtonDefault from "../layout/ButtonDefault.js";
 
 import imgGithub from "../../img/Github.png";
 import imgLinkedin from "../../img/Linkedin.png";

@@ -1,6 +1,7 @@
 .principal {
     width: 45%;
     margin-top: 10px;
+    border: solid pink 2px;
 }
 
 .principal img {
