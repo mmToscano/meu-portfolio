@@ -40,6 +40,7 @@
 
 .selectionArea h2:hover {
     cursor: pointer;
+    border-bottom: solid white 1px;
 }
 
 .iconsArea {

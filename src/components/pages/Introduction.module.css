@@ -52,6 +52,7 @@
 }
 
 .introduction .buttonArea div { 
+    height: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,6 +60,12 @@
    width: 200px;
    border-radius: 100px;
    border: solid black 2px;
+   transition: transform 0.3s ease, background-color 0.5s ease, color 0.5s;
+}
+
+.introduction .buttonArea a {
+    text-decoration: none;
+    color: black;
 }
 
 .introduction .buttonArea div h2{ 
@@ -72,6 +79,23 @@
     margin-right: 0px;
 }
 
+.introduction .buttonArea button {
+    transition: transform 0.3s ease, background-color 0.5s ease, color 0.5s;
+}
+
 .buttonArea button:hover, .buttonArea div:hover {
     cursor: pointer;
+    transform: scale(1.1);
 }
+
+.buttonArea button:hover {
+    color:black;
+    background-color: white;
+}
+
+.buttonArea div:hover {
+    color: white;
+    background-color: #8ED973;
+    border: none;    
+}
+

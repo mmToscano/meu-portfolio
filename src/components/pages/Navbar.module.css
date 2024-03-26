@@ -7,19 +7,10 @@
     align-items: center;
 }
 
-.navbar img {
-    width: 45px;
-    height: 45px;
-    margin-right: auto;
-    border-radius: 150px;
-    margin-left: 90px; 
-    
-}
-
 .navbar h1 {
     color: white;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 18px;
+    font-size: 25px;
 }

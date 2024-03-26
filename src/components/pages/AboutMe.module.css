@@ -8,6 +8,11 @@
     padding-left: 40px;
 }
 
+.aboutMe a {
+    text-decoration: none;
+    color: white;
+}
+
 .textArea {
     color: white;
 }

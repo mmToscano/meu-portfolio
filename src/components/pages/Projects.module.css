@@ -30,6 +30,10 @@
     cursor: pointer;
 }
 
+.buttonArea h2:hover{
+    border-bottom: solid white 1px;
+}
+
 .chosen {
     border-bottom: solid white 3px;
 }
@@ -45,4 +49,8 @@
 .demonstrationArea {
     width: 50%;
     background-color: #104862;
+}
+
+.demonstrationArea img {
+    width: 100%;
 }

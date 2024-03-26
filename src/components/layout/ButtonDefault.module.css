@@ -16,10 +16,14 @@
     background-color: #156082;
     border: none;
     border-radius: 30px;
+    transition: transform 0.3s ease, border 0.3s ease;
+    margin-bottom: 20px;
 }
 
 .buttonPrincipal button:hover {
     cursor: pointer;
+    transform: scale(1.50);
+    border: solid white 2px;
 }
 
 .buttonPrincipal img {

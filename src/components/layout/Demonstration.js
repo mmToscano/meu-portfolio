@@ -2,12 +2,24 @@ import styles from "./Demonstration.module.css";
 
 import leftArrow from "../../img/leftArrow.png"
 import rightArrow from "../../img/rightArrow.png"
+import githubImg from "../../img/githubImg2.png"
+import fullscreen from "../../img/fullscreen.png"
 
 import React, {useEffect, useState} from 'react'
 
-function Demonstration({name, description, imgs}) {
+function Demonstration({name, description, showModal, imgs, imgsForModal}) {
 
     const [positionValue, setPositionValue] = useState(0);
+    const [showInnerButton, setShowInnerButton] = useState(false);
+
+    function showModalAndChangeImgState() {
+        showModal();
+        imgsForModal();
+    }
+
+    function toggleInnerButton() {
+        setShowInnerButton(!showInnerButton);
+    }
 
 
     const toggleImgs = (event) => {
@@ -44,18 +56,22 @@ function Demonstration({name, description, imgs}) {
 
     return (
         <div className={styles.principal}>
-            <h2>{name}</h2>
+            <div className={styles.infoArea}>
+                <div className={styles.gitImg}>
+                    <img src={githubImg}/>
+                    <h3>checar repositório</h3>
+                </div>
+                <h2>{name}</h2>
+                <div></div>
+            </div>
             <div className={styles.toggleArea}>
                 <button ><img src={leftArrow} onClick={toggleImgs}  id="left"/></button>
-
-                {imgs.length > 0 ? (
-                    <img src={imgs[0]} id="selectedDemoImage"/>                    
-                    ) : (
-                        <img src={imgs} id="selectedDemoImage"/>
-                )}
+                <img onClick={showModalAndChangeImgState} src={imgs[0]} id="selectedDemoImage" onMouseOver={toggleInnerButton} onMouseOut={toggleInnerButton}/> 
+                {showInnerButton &&
+                    <img className={styles.innerButton} src={fullscreen}/>
+                }
                 
                 <button ><img src={rightArrow} onClick={toggleImgs} id="right"/></button>
-
             </div>
             <h2 className={styles.description}>
                {description}

@@ -1,0 +1,15 @@
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal img {
+    width: 10%;
+    cursor: pointer;
+}
+
+.principal .demo {
+    width: 80%;
+    cursor: default;
+}

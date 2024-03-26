@@ -8,12 +8,17 @@ import Demonstration from "../layout/Demonstration";
 
 import defaultImg from "../../img/defaultDemoImg.png"
 
-function Projects() {
+function Projects({showModal, sendImgsToApp}) {
 
     const [showFront, setShowFront] = useState(true);
     const [showBack, setShowBack] = useState(false);
     const [chosenElement, setChosenElement] = useState(null);
     const [chosenProject, setChosenProject] = useState(null);
+    const [showDefault, setShowDefault] = useState(true);
+
+    function setImgsForModal() {
+        sendImgsToApp(chosenProject.imgs);
+    }
 
     useEffect(() => {
         setChosenElement(document.getElementById("chosen")); //coloca o front como selected
@@ -35,7 +40,7 @@ function Projects() {
    }
 
    const mostrarDemo = (id) => {
-    console.log("clicou")
+    setShowDefault(false);
     var selectedProject;
     for (let index = 0; index < projects.length; index++) {
         if(id == index){
@@ -67,12 +72,12 @@ function Projects() {
                     </div>
                 </div>
                 <div className={styles.demonstrationArea}>
-                    {chosenProject ? (
-                            <Demonstration name={chosenProject.name} description={chosenProject.description} imgs={chosenProject.imgs} />
-                        ) : (
-                            <Demonstration imgs={defaultImg}/>
-                    )}
-
+                    {chosenProject &&
+                        <Demonstration showModal={showModal} imgsForModal={setImgsForModal} name={chosenProject.name} description={chosenProject.description} imgs={chosenProject.imgs} />
+                    }
+                    {showDefault &&
+                        <img src={defaultImg}/>
+                    }
                 </div>
             </div>
         </div>

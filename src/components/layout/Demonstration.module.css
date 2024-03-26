@@ -2,15 +2,68 @@
     width: 100%;
 }
 
-.principal h2 {
+.principal .infoArea {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.principal .infoArea h2 {
     color: white;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+}
+
+.principal .infoArea div {
+    width: 60px;
+    height: 60px;
+
+}
+
+.principal .infoArea .gitImg {
+    width: 150px;
+    height: 30px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease ;
+    margin-right: 70px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.principal .infoArea .gitImg h3 {
+    font-size: 14px;
+    color: black;
+    font-weight: 100;
+    transition: color 0.3s ease;
+}
+
+.principal .infoArea .gitImg img {
+    width: 30px;
+    height: 30px;
+}
+
+.principal .infoArea .gitImg:hover {
+    transform: scale(1.1);
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.principal .infoArea .gitImg:hover h3 {
+    color: white;
 }
 
 .toggleArea {
+    position: relative;
     display: flex;
+}
+
+.toggleArea .innerButton {
+    width: 10%;
+    position: absolute;
+    top: 90px;
+    right: 285px;
 }
 
 .toggleArea button {
@@ -29,6 +82,11 @@
 
 .toggleArea > img {
     width: 80%;
+    transition: filter 0.3s ease;
+}
+
+.toggleArea > img:hover {
+    filter: brightness(50%);
 }
 
 .description {

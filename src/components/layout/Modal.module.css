@@ -1,0 +1,41 @@
+.principal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .contentSection {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-top: 60px;
+    z-index: 1;
+  }
+
+  .contentSection .closeButton {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 30px;
+    border: solid red 1px;
+    background: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .contentSection .closeButton:hover {
+    color: white;
+    background-color: red;
+    cursor: pointer;
+  }
