@@ -5,10 +5,10 @@ import styles from "./Modal.module.css"
 const Modal = ({ children, onClick }) => {
 
   return (
-    <div className={styles.principal} onClick={onClick}>
+    <div className={styles.principal}>
       <div className={styles.contentSection}>
         {children}
-        <button className={styles.closeButton}>
+        <button className={styles.closeButton} onClick={onClick}>
           X
         </button>
       </div>

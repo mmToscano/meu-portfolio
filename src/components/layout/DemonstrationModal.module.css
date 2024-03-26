@@ -4,12 +4,19 @@
     align-items: center;
 }
 
-.principal img {
+.principal button {
     width: 10%;
+    background: none;
+    border: none;
+}
+
+.principal img {
+    width: 100%;
     cursor: pointer;
 }
 
 .principal .demo {
     width: 80%;
+    height: 100%;
     cursor: default;
 }

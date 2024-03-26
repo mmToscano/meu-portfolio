@@ -57,7 +57,7 @@ function Abilities() {
         <div className={styles.abilitiesSection}>
             <h1>Habilidades</h1>
             <div className={styles.infoArea}>
-                <h2>{infoDisplayed}</h2>
+                <h2>"{infoDisplayed}"</h2>
                 <div className={styles.languagesArea}>
                     <div className={styles.selectionArea}>
                         <h2 id="selected" className={styles.chosen} onClick={mudarSelecao}>Back-end</h2>

@@ -8,6 +8,10 @@
     font-weight: 100;
 }
 
+.buttonPrincipal a {
+    cursor: default;
+}
+
 .buttonPrincipal button {
     display: block;
     width: 50px;
@@ -18,10 +22,10 @@
     border-radius: 30px;
     transition: transform 0.3s ease, border 0.3s ease;
     margin-bottom: 20px;
+    cursor: default;
 }
 
 .buttonPrincipal button:hover {
-    cursor: pointer;
     transform: scale(1.50);
     border: solid white 2px;
 }
@@ -30,6 +34,7 @@
     width: 70%;
     height: 70%;
     margin-top: 3px;
+    cursor: pointer;
 }
 
 .buttonPrincipal h1 {

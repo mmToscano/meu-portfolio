@@ -40,6 +40,11 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
         }
     };
 
+    function openNewTab(url) {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer');
+        if (newWindow) newWindow.opener = null;
+    }
+
     //[] executa no f5
     // vazio executa a cada renderização de qualquer coisa
     
@@ -57,10 +62,10 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
     return (
         <div className={styles.principal}>
             <div className={styles.infoArea}>
-                <div className={styles.gitImg}>
+                <a href="#" onClick={() => openNewTab("https://github.com/mmToscano/" + name)} className={styles.gitImg}>
                     <img src={githubImg}/>
                     <h3>checar repositório</h3>
-                </div>
+                </a>
                 <h2>{name}</h2>
                 <div></div>
             </div>
@@ -68,7 +73,7 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
                 <button ><img src={leftArrow} onClick={toggleImgs}  id="left"/></button>
                 <img onClick={showModalAndChangeImgState} src={imgs[0]} id="selectedDemoImage" onMouseOver={toggleInnerButton} onMouseOut={toggleInnerButton}/> 
                 {showInnerButton &&
-                    <img className={styles.innerButton} src={fullscreen}/>
+                    <img onClick={showModalAndChangeImgState} className={styles.innerButton} src={fullscreen}/>
                 }
                 
                 <button ><img src={rightArrow} onClick={toggleImgs} id="right"/></button>
