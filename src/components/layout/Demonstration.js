@@ -75,7 +75,6 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
                 {showInnerButton &&
                     <img onClick={showModalAndChangeImgState} className={styles.innerButton} src={fullscreen}/>
                 }
-                
                 <button ><img src={rightArrow} onClick={toggleImgs} id="right"/></button>
             </div>
             <h2 className={styles.description}>

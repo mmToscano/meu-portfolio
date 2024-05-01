@@ -8,14 +8,17 @@ import Modal from './components/layout/Modal';
 import DemonstrationModal from './components/layout/DemonstrationModal';
 
 import React, { useState } from 'react';
+import DemonstrationVideoModal from './components/layout/DemonstrationVideoModal';
 
 function App() {
 
   const [showModal, setShowModal] = useState(false);
   const [modalImgs, setModalImgs] = useState([]);
+  const [modalVideo, setModalVideo] = useState();
 
-  function functionSetModalImgs(imgs) {
+  function functionSetModalImgs(imgs, video) {
     setModalImgs(imgs);
+    setModalVideo(video);
   }
   
   function toggleModal() {
@@ -24,7 +27,14 @@ function App() {
 
   return (
     <div className={styles.principal}>
-      {showModal && modalImgs &&
+      {/* {showModal && modalImgs && !modalVideo &&
+        <Modal onClick={toggleModal}>{<DemonstrationModal imgs={modalImgs}/>}</Modal>
+      } */}
+      {showModal && modalVideo && 
+        <Modal onClick={toggleModal}>{<DemonstrationVideoModal video={modalVideo}/>}</Modal>
+      }
+
+      {showModal && modalImgs && !modalVideo &&
         <Modal onClick={toggleModal}>{<DemonstrationModal imgs={modalImgs}/>}</Modal>
       }
       <Navbar/>

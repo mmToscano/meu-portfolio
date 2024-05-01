@@ -17,7 +17,7 @@ function Projects({showModal, sendImgsToApp}) {
     const [showDefault, setShowDefault] = useState(true);
 
     function setImgsForModal() {
-        sendImgsToApp(chosenProject.imgs);
+        sendImgsToApp(chosenProject.imgs, chosenProject.video);
     }
 
     useEffect(() => {

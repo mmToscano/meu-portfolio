@@ -68,8 +68,9 @@
 .toggleArea .innerButton {
     width: 10%;
     position: absolute;
-    top: 90px;
-    right: 285px;
+    top: 30%;
+    left: 50%; 
+    transform: translateX(-50%);
 }
 
 .toggleArea button {
