@@ -1,16 +1,15 @@
+var netflixDescription = "Esse projeto deu mais trabalho do que eu inicialmente imaginava: Os pequenos ícones que nunca dá para encontrar igual na internet; a imagem de fundo que fica atrás de dois componentes; o carrosel que eu não consegui fazer completamente fiel à pagina original e mais alguns detalhes. | Ao menos por enquanto, resolvi deixar a cópia por aqui e não continuar, tanto por achar que o que fiz ficou bom e genuíno à netflix original e porque precisei tomar conta de outros projetos. ";
+var amazDescription = "Esse foi um trabalho da faculdade e meu primeiro projeto grande em React. A ideia seria um ecommerce de sementes. Uma ideia simples, com poucas páginas e não muitas funcionalidades, mas uma grande oportunidade de aprendizado da ferramente React.|Além de ser meu primeiro projeto em React, também precisei fazer a parte do banco de dados e criar uma API para conectar os dois. O banco foi feito em mySql e a API no express.js. O código você pode encontrar nesse link do github: https://github.com/mmToscano/amaz_API|Esse projeto me fez perceber o quão importante é um design bonito e elegante em uma página.";
+var mqttDescription = "Esse projeto é um chat usando o protocolo mqtt e a interface usando o Swing UI designer. Tudo foi feito na linguagem Java.|O trabalho tem 3 componentes principais: 2 clientes conversando por um chat e um elemento que chamei de transmissor que gera um número aleatório de 1 a 100 a cada segundo. Se o número gerado for maior que 95, essa informação é enviada ao chat dos clientes.|Meu interesse por esse projeto cresceu conforme o desenvolvimento do mesmo. Desde o uso do Swing, que pensei ser um bicho de 7 cabeças, mas que na verdade é bem simples, até o próprio mqtt, sendo também muito simples de usar.";
+var graficosDescription = "Esse projeto foi feito no meu 4º período da faculdade. Foi feito usando javascript, html, css e a biblioteca Chart.js para os gráficos. É muito simples e fácil criar gráficos com o Chart, o ponto negativo disso é que as opções de gráficos e customizações do mesmo são limitadas quando comparadas à outras bibliotecas do mesmo gênero.";
+var androidDescription = "Esse projeto foi minha primeira experiência usando android studio. Um colega da faculdade fez o design das telas e eu as fiz no programa. A única parte de programação mesmo fica reservada para a navegação de telas. Pretendo ainda fazer mais projetos usando a ferramenta e adicionar aqui no meu portfolio.";
+
 var ProjectsList = [
 {id: 0, type: "Front-end", name: "netflix-copy", description: netflixDescription, src: "/img/netflix2.png", imgs: ["/img/netflix1.png", "/img/netflix2.png", "/img/netflix3.png", "/img/netflix4.png"], video: null},
-{id: 1, type: "Front-end", name: "amaz", description: "amazDescription", src: "/img/amaz2.png", imgs: ["/img/amaz1.png", "/img/amaz2.png", "/img/amaz3.png", "/img/amaz4.png", "/img/amaz5.png"], video: null},
+{id: 1, type: "Front-end", name: "amaz", description: amazDescription, src: "/img/amaz2.png", imgs: ["/img/amaz1.png", "/img/amaz2.png", "/img/amaz3.png", "/img/amaz4.png", "/img/amaz5.png"], video: null},
 {id: 2, type: "Back-end", name: "mqttProject", description: mqttDescription, src: "/img/mqtt1.png", imgs: ["/img/mqtt1.png"], video: null},
 {id: 3, type: "Back-end", name: "PlotarGraficos", description: graficosDescription, src: "/img/graficos1.png", imgs: ["/img/graficos1.png"], video: "/img/graficosVideo.mp4"},
 {id: 4, type: "Front-end", name: "gameChatAndroidProject", description: androidDescription, src: "/img/android1.png", imgs: ["/img/android1.png"], video: "/img/androidVideo.mp4"}
 ];
-
-
-var netflixDescription = "projeto netflix";
-var amazDescription = "projeto amaz";
-var mqttDescription = "projeto mqtt";
-var graficosDescription = "projeto costs";
-var androidDescription = "projeto android";
 
 export default ProjectsList;

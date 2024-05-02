@@ -15,10 +15,12 @@ function App() {
   const [showModal, setShowModal] = useState(false);
   const [modalImgs, setModalImgs] = useState([]);
   const [modalVideo, setModalVideo] = useState();
+  const [modaldescription, setModalDescription] = useState();
 
-  function functionSetModalImgs(imgs, video) {
+  function functionSetModalImgs(imgs, video, description) {
     setModalImgs(imgs);
     setModalVideo(video);
+    setModalDescription(description)
   }
   
   function toggleModal() {
@@ -31,11 +33,11 @@ function App() {
         <Modal onClick={toggleModal}>{<DemonstrationModal imgs={modalImgs}/>}</Modal>
       } */}
       {showModal && modalVideo && 
-        <Modal onClick={toggleModal}>{<DemonstrationVideoModal video={modalVideo}/>}</Modal>
+        <Modal onClick={toggleModal} description={modaldescription}>{<DemonstrationVideoModal video={modalVideo}/>}</Modal>
       }
 
       {showModal && modalImgs && !modalVideo &&
-        <Modal onClick={toggleModal}>{<DemonstrationModal imgs={modalImgs}/>}</Modal>
+        <Modal onClick={toggleModal} description={modaldescription}>{<DemonstrationModal imgs={modalImgs}/>}</Modal>
       }
       <Navbar/>
       <Introduction/>

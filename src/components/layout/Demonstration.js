@@ -8,6 +8,7 @@ import fullscreen from "../../img/fullscreen.png"
 import React, {useEffect, useState} from 'react'
 
 function Demonstration({name, description, showModal, imgs, imgsForModal}) {
+    
 
     const [positionValue, setPositionValue] = useState(0);
     const [showInnerButton, setShowInnerButton] = useState(false);
@@ -19,6 +20,13 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
 
     function toggleInnerButton() {
         setShowInnerButton(!showInnerButton);
+        var imgElement = document.getElementById("selectedDemoImage");
+        if(imgElement.style.filter == "brightness(0.5)"){
+            imgElement.style.filter = "brightness(1.0)";
+        }else{
+            imgElement.style.filter = "brightness(0.5)";
+        }
+        
     }
 
 
@@ -71,15 +79,14 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
             </div>
             <div className={styles.toggleArea}>
                 <button ><img src={leftArrow} onClick={toggleImgs}  id="left"/></button>
-                <img onClick={showModalAndChangeImgState} src={imgs[0]} id="selectedDemoImage" onMouseOver={toggleInnerButton} onMouseOut={toggleInnerButton}/> 
-                {showInnerButton &&
-                    <img onClick={showModalAndChangeImgState} className={styles.innerButton} src={fullscreen}/>
-                }
+                <div className={styles.wrapper} onMouseEnter={toggleInnerButton} onMouseLeave={toggleInnerButton}>
+                    <img onClick={showModalAndChangeImgState} src={imgs[0]} id="selectedDemoImage"/> 
+                    {showInnerButton &&
+                        <img onClick={showModalAndChangeImgState} className={styles.innerButton} src={fullscreen}/>
+                    }
+                </div>
                 <button ><img src={rightArrow} onClick={toggleImgs} id="right"/></button>
             </div>
-            <h2 className={styles.description}>
-               {description}
-            </h2>
         </div>
         
     )
