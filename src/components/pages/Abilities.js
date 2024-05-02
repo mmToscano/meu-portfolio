@@ -22,7 +22,7 @@ function Abilities() {
       }, []);
 
     const mudarSelecao = (event) => {
-        if(!(event.target == selectedElement)){
+        if(!(event.target === selectedElement)){
             var clickedElement = event.target;
 
     
@@ -42,7 +42,7 @@ function Abilities() {
         var item;
 
         for (let index = 0; index < abilitiesList.length; index++) {
-            if(index == id){
+            if(index === id){
                 item = abilitiesList[id];
                 break;
             }
@@ -65,7 +65,7 @@ function Abilities() {
                     </div>
                     <div className={styles.iconsArea}>
                         {abilitiesList.length > 0 && showBack &&
-                        abilitiesList.filter((abi => abi.type == "Back-end")).map((abi)=> (
+                        abilitiesList.filter((abi => abi.type === "Back-end")).map((abi)=> (
                             <ImgContainer 
                                 id={abi.id}
                                 type={abi.type}
@@ -75,7 +75,7 @@ function Abilities() {
                             />
                         ))}
                         {abilitiesList.length > 0 && showFront &&
-                        abilitiesList.filter((abi => abi.type == "Front-end")).map((abi)=> (
+                        abilitiesList.filter((abi => abi.type === "Front-end")).map((abi)=> (
                             <ImgContainer 
                                 id={abi.id}
                                 type={abi.type}

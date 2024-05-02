@@ -27,7 +27,7 @@ function Projects({showModal, sendImgsToApp}) {
    const mudarSelecao = (event) => {
     var clickedElement = event.target;
 
-    if(!(clickedElement == chosenElement)){
+    if(!(clickedElement === chosenElement)){
         clickedElement.classList.add(styles.chosen);
     chosenElement.classList.remove(styles.chosen);
 
@@ -43,7 +43,7 @@ function Projects({showModal, sendImgsToApp}) {
     setShowDefault(false);
     var selectedProject;
     for (let index = 0; index < projects.length; index++) {
-        if(id == index){
+        if(id === index){
             selectedProject = projects[index];
             break;
         }
@@ -62,11 +62,11 @@ function Projects({showModal, sendImgsToApp}) {
                     </div>
                     <div className={styles.imgArea}>
                         {projects.length > 0 && showFront &&
-                        projects.filter((project => project.type == "Front-end")).map((proj) => (
+                        projects.filter((project => project.type === "Front-end")).map((proj) => (
                             <ProjectImgContainer src={proj.src} onClick={() => mostrarDemo(proj.id)}/>
                         ))}
                         {projects.length > 0 && showBack &&
-                        projects.filter((project => project.type == "Back-end")).map((proj) => (
+                        projects.filter((project => project.type === "Back-end")).map((proj) => (
                             <ProjectImgContainer src={proj.src} onClick={() => mostrarDemo(proj.id)}/>
                         ))}
                     </div>
