@@ -10,7 +10,7 @@ function ButtonDefault({description, info, Img, link}) {
     return (
         <div className={styles.buttonPrincipal}>
             <a href="#" onClick={() => openNewTab(link)}>
-                <button><img src={Img}/></button>
+                <button href=""><img src={Img} alt=""/></button>
             </a>
             <h1>{description}</h1>
             <h1>{info}</h1>

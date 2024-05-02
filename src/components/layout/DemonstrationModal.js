@@ -43,8 +43,8 @@ function DemonstrationModal({imgs}) {
     return (
         <div className={styles.principal}>
             <button><img src={leftArrow} onClick={toggleImgs}  id="left"/></button>
-            <img src={imgs[0]} className={styles.demo} id="selectedModalDemoImage"/>
-            <button><img src={rightArrow} onClick={toggleImgs} id="right"/></button>
+            <img src={imgs[0]} className={styles.demo} id="selectedModalDemoImage" alt=""/>
+            <button><img src={rightArrow} onClick={toggleImgs} id="right" alt=""/></button>
         </div>
     )
 }

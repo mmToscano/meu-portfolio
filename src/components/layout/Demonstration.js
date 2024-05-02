@@ -71,21 +71,21 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
         <div className={styles.principal}>
             <div className={styles.infoArea}>
                 <a href="#" onClick={() => openNewTab("https://github.com/mmToscano/" + name)} className={styles.gitImg}>
-                    <img src={githubImg}/>
+                    <img src={githubImg} alt=""/>
                     <h3>checar repositório</h3>
                 </a>
                 <h2>{name}</h2>
                 <div></div>
             </div>
             <div className={styles.toggleArea}>
-                <button ><img src={leftArrow} onClick={toggleImgs}  id="left"/></button>
+                <button ><img src={leftArrow} onClick={toggleImgs}  id="left" alt=""/></button>
                 <div className={styles.wrapper} onMouseEnter={toggleInnerButton} onMouseLeave={toggleInnerButton}>
-                    <img onClick={showModalAndChangeImgState} src={imgs[0]} id="selectedDemoImage"/> 
+                    <img onClick={showModalAndChangeImgState} src={imgs[0]} id="selectedDemoImage" alt=""/> 
                     {showInnerButton &&
-                        <img onClick={showModalAndChangeImgState} className={styles.innerButton} src={fullscreen}/>
+                        <img onClick={showModalAndChangeImgState} className={styles.innerButton} src={fullscreen} alt=""/>
                     }
                 </div>
-                <button ><img src={rightArrow} onClick={toggleImgs} id="right"/></button>
+                <button ><img src={rightArrow} onClick={toggleImgs} id="right" alt=""/></button>
             </div>
         </div>
         

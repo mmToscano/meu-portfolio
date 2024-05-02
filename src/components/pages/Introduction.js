@@ -31,12 +31,12 @@ function Introduction() {
                     <a href="#" onClick={() => openNewTab("https://wa.me/5534999619084")}>
                         <div>
                             <h2>Entre em contato</h2> 
-                            <img src={whatsappPhoto}/>
+                            <img src={whatsappPhoto} alt=""/>
                         </div>
                     </a>
                 </div>
             </div>
-            <img src={photo}/>
+            <img src={photo} alt=""/>
             
             
         </div>
