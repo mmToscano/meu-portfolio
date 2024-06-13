@@ -54,40 +54,45 @@ function Abilities() {
 
 
     return (
-        <div className={styles.abilitiesSection}>
-            <h1>Habilidades</h1>
-            <div className={styles.infoArea}>
-                <h2>"{infoDisplayed}"</h2>
-                <div className={styles.languagesArea}>
-                    <div className={styles.selectionArea}>
-                        <h2 id="selected" className={styles.chosen} onClick={mudarSelecao}>Back-end</h2>
-                        <h2 onClick={mudarSelecao}>Front-end</h2>
+        <div className={styles.principal}>
+            <div className={styles.abilitiesSection}>
+                <h1>Habilidades</h1>
+                <div className={styles.infoArea}>
+                    <div className={styles.infoDisplayed}>
+                        <h2>"{infoDisplayed}"</h2>
                     </div>
-                    <div className={styles.iconsArea}>
-                        {abilitiesList.length > 0 && showBack &&
-                        abilitiesList.filter((abi => abi.type === "Back-end")).map((abi)=> (
-                            <ImgContainer 
-                                id={abi.id}
-                                type={abi.type}
-                                src={abi.src}
-                                description={abi.description}
-                                onMouseOver={() => {mostrarInfo(abi.id)}}
-                            />
-                        ))}
-                        {abilitiesList.length > 0 && showFront &&
-                        abilitiesList.filter((abi => abi.type === "Front-end")).map((abi)=> (
-                            <ImgContainer 
-                                id={abi.id}
-                                type={abi.type}
-                                src={abi.src}
-                                description={abi.description}
-                                onMouseOver={() => {mostrarInfo(abi.id)}}
-                            />
-                        ))}
-                    </div>  
+                    <div className={styles.languagesArea}>
+                        <div className={styles.selectionArea}>
+                            <h2 id="selected" className={styles.chosen} onClick={mudarSelecao}>Back-end</h2>
+                            <h2 onClick={mudarSelecao}>Front-end</h2>
+                        </div>
+                        <div className={styles.iconsArea}>
+                            {abilitiesList.length > 0 && showBack &&
+                            abilitiesList.filter((abi => abi.type === "Back-end")).map((abi)=> (
+                                <ImgContainer 
+                                    id={abi.id}
+                                    type={abi.type}
+                                    src={abi.src}
+                                    description={abi.description}
+                                    onMouseOver={() => {mostrarInfo(abi.id)}}
+                                />
+                            ))}
+                            {abilitiesList.length > 0 && showFront &&
+                            abilitiesList.filter((abi => abi.type === "Front-end")).map((abi)=> (
+                                <ImgContainer 
+                                    id={abi.id}
+                                    type={abi.type}
+                                    src={abi.src}
+                                    description={abi.description}
+                                    onMouseOver={() => {mostrarInfo(abi.id)}}
+                                />
+                            ))}
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
+        
     )
 }
 

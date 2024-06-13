@@ -9,7 +9,8 @@ import imgPhone from "../../img/telefone.png";
 
 function AboutMe () {
     return (
-        <div className={styles.aboutMe}>
+        <div className={styles.principal}>
+            <div className={styles.aboutMe}>
             <div className={styles.textArea}>
                 <h1>Sobre mim</h1>
                 <h2>Meu nome é <b>Matheus Toscano Moraes. </b>{text[0]}</h2>
@@ -23,6 +24,8 @@ function AboutMe () {
                 <ButtonDefault link="https://github.com/mmToscano" description="Github" info="@mmToscano" Img={imgGithub} target="_blank" rel="noopener noreferrer"/>
             </div>
         </div>
+        </div>
+        
         
     );
 }

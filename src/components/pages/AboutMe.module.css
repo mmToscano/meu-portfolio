@@ -1,11 +1,19 @@
+.principal{
+    width: 100%;
+    background-color: white;
+}
+
 .aboutMe {
     width: 80%;
-    background-color: #104862;
+    background-color: white;
+    border: solid #4831D4 4px;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding-top: 30px;
     padding-right: 40px;
     padding-left: 40px;
+    padding-bottom: 1px;
 }
 
 .aboutMe a {
@@ -20,14 +28,16 @@
 .textArea h1 {
     text-align: center;
     margin-bottom: 30px;
+    color: #4831D4;
 }
 
 .textArea h2{
     font-weight: 100;
+    color: #4831D4;
 }
 
 .textArea h2 b {
-    color: #8ED973;
+    color: #4831D4;
 }
 
 .buttonArea {

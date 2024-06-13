@@ -39,7 +39,6 @@ function App() {
       {showModal && modalImgs && !modalVideo &&
         <Modal onClick={toggleModal} description={modaldescription}>{<DemonstrationModal imgs={modalImgs}/>}</Modal>
       }
-      <Navbar/>
       <Introduction/>
       <AboutMe/>
       <Abilities/>
