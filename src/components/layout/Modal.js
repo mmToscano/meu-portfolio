@@ -19,7 +19,7 @@ const Modal = ({ children, description, onClick }) => {
 				<div className={styles.demoSection}>
 					{children}
 					<button className={styles.closeButton} onClick={onClick}>
-						<img src={closeButton}/>
+						<img src={closeButton} alt=""/>
 					</button>
 				</div>
 			</div>

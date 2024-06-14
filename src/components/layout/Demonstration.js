@@ -21,7 +21,7 @@ function Demonstration({name, description, showModal, imgs, imgsForModal}) {
     function toggleInnerButton() {
         setShowInnerButton(!showInnerButton);
         var imgElement = document.getElementById("selectedDemoImage");
-        if(imgElement.style.filter == "brightness(0.5)"){
+        if(imgElement.style.filter === "brightness(0.5)"){
             imgElement.style.filter = "brightness(1.0)";
         }else{
             imgElement.style.filter = "brightness(0.5)";
