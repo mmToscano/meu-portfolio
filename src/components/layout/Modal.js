@@ -4,35 +4,40 @@ import styles from "./Modal.module.css"
 
 import React from 'react'
 
+import closeButton from "../../img/closeButton_ic.png";
+
 const Modal = ({ children, description, onClick }) => {
 
 	var descriptionArrayString = description.split("|");
+	var projectTitle = descriptionArrayString.shift();
+	var toolsUsed = descriptionArrayString.pop().split("$");
 
   return (
     <div className={styles.principal}>
 		<div className={styles.contentSection}>
-			<div className={styles.descriptionSection}>
-				{descriptionArrayString.map((part, index) => (
-					<React.Fragment key={index}>
-					{part}
-					{/* Add two line breaks if it's not the last part */}
-					{index < descriptionArrayString.length - 1 && (
-						<>
-						<br />
-						<br />
-						</>
-					)}
-					</React.Fragment>
-				))}
-			</div>
 			<div className={styles.backgroundSection}>
 				<div className={styles.demoSection}>
 					{children}
 					<button className={styles.closeButton} onClick={onClick}>
-						X
+						<img src={closeButton}/>
 					</button>
 				</div>
 			</div>
+			<div className={styles.descriptionSection}>
+				<h1>{projectTitle}</h1>
+				<br/>
+				{descriptionArrayString.map((part, index) => (
+					<h2>{part}</h2>
+				))}
+				<br/>
+				<h1>Ferramentas utilizadas</h1>
+				<ul>
+					{toolsUsed.map((part, index) => (
+						<li>{part}</li>
+					))}
+				</ul>
+			</div>
+			
 		</div>
       	
     </div>
