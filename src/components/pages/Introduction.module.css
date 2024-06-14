@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-image: url("C:\Users\MMora\Programacao\VisualStudio\Portfolio\meu-portfolio\src\img\backgroundForIntroduction.png");
+    background-image: url("../../img/backgroundForIntroduction.png");
 }
 
 .introduction .infoArea {
