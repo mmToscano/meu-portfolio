@@ -1,15 +1,23 @@
 .principal {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: white;
+}
+
+.projects {
     width: 95%;
     margin: 0 auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    border: solid #4831D4 3px;
+    padding-right: 20px;
+    padding-bottom: 20px;
 }
 
 .principal h1 {
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
-    color: white;
+    color: #4831D4;
 }
 
 .selectionArea {
@@ -25,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    color: white;
+    color: #4831D4;
 }
 
 .buttonArea h2 {
@@ -33,11 +41,11 @@
 }
 
 .buttonArea h2:hover{
-    border-bottom: solid white 1px;
+    border-bottom: solid #4831D4 1px;
 }
 
 .chosen {
-    border-bottom: solid white 3px;
+    border-bottom: solid #4831D4 3px;
 }
 
 .imgArea {
@@ -50,7 +58,8 @@
 
 .demonstrationArea {
     width: 50%;
-    background-color: #104862;
+    background-color: white;
+    border: solid #4831D4 3px;
 }
 
 .demonstrationArea img {

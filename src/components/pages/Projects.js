@@ -52,7 +52,8 @@ function Projects({showModal, sendImgsToApp}) {
    }
 
     return (
-        <div id="projects" className={styles.principal}>
+        <div className={styles.principal}>
+            <div id="projects" className={styles.projects}>
             <h1>Projetos</h1>
             <div className={styles.infoArea}>
                 <div className={styles.selectionArea}> 
@@ -81,6 +82,8 @@ function Projects({showModal, sendImgsToApp}) {
                 </div>
             </div>
         </div>
+        </div>
+        
     )
 }
 

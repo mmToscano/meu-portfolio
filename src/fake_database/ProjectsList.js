@@ -5,11 +5,11 @@ var graficosDescription = "Esse projeto foi feito no meu 4º período da faculda
 var androidDescription = "Esse projeto foi minha primeira experiência usando android studio. Um colega da faculdade fez o design das telas e eu as fiz no programa. A única parte de programação mesmo fica reservada para a navegação de telas. Pretendo ainda fazer mais projetos usando a ferramenta e adicionar aqui no meu portfolio.";
 
 var ProjectsList = [
-{id: 0, type: "Front-end", name: "netflix-copy", description: netflixDescription, src: "/img/netflix2.png", imgs: ["/img/netflix1.png", "/img/netflix2.png", "/img/netflix3.png", "/img/netflix4.png"], video: null},
-{id: 1, type: "Front-end", name: "amaz", description: amazDescription, src: "/img/amaz2.png", imgs: ["/img/amaz1.png", "/img/amaz2.png", "/img/amaz3.png", "/img/amaz4.png", "/img/amaz5.png"], video: null},
-{id: 2, type: "Back-end", name: "mqttProject", description: mqttDescription, src: "/img/mqtt1.png", imgs: ["/img/mqtt1.png"], video: null},
-{id: 3, type: "Back-end", name: "PlotarGraficos", description: graficosDescription, src: "/img/graficos1.png", imgs: ["/img/graficos1.png"], video: "/img/graficosVideo.mp4"},
-{id: 4, type: "Front-end", name: "gameChatAndroidProject", description: androidDescription, src: "/img/android1.png", imgs: ["/img/android1.png"], video: "/img/androidVideo.mp4"}
+{id: 0, type: "Front-end", name: "netflix-copy", description: netflixDescription, src: "/img/netflixCopy_cover.png", imgs: ["/img/netflix1.png", "/img/netflix2.png", "/img/netflix3.png", "/img/netflix4.png"], video: null},
+{id: 1, type: "Front-end", name: "amaz", description: amazDescription, src: "/img/AmazProject_cover.png", imgs: ["/img/amaz1.png", "/img/amaz2.png", "/img/amaz3.png", "/img/amaz4.png", "/img/amaz5.png"], video: null},
+{id: 2, type: "Back-end", name: "mqttProject", description: mqttDescription, src: "/img/mqttProject_cover.png", imgs: ["/img/mqtt1.png"], video: null},
+{id: 3, type: "Back-end", name: "PlotarGraficos", description: graficosDescription, src: "/img/plotarGraficos_cover.png", imgs: ["/img/graficos1.png"], video: "/img/graficosVideo.mp4"},
+{id: 4, type: "Front-end", name: "gameChatAndroidProject", description: androidDescription, src: "/img/gameChat_cover.png", imgs: ["/img/android1.png"], video: "/img/androidVideo.mp4"}
 ];
 
 export default ProjectsList;
